@@ -138,20 +138,20 @@
             margin: 2.4em 0 ;
        }
 
-       .price{
+       .harga .price{
             background-color: #b9c7d14b;   
             padding: 1.2em;
             border-radius: 1vw;
        }
 
-            .price .harga-text{
+           .harga  .price .harga-text{
                 display: flex;
                 align-items: center;
                 gap: .2em;
                 justify-content: start;
             }
 
-            .price h2{
+            .harga .price h2{
                 font-size: 2rem;
             }
 
