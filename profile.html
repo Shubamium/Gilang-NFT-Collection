@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Header V1.0 -->
+<head>
+
+    <!-- Bagian Metadata -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bagian Display -->
+    <title>Gilang NFT</title>
+    
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/utility.css">
+    <link rel="stylesheet" href="styles/profile.css">
+
+</head>
+
+<!-- Body -->
+<body>
+    <!-- Container -->
+    <div id="container">
+
+        <!-- Header -->
+        <header>
+                <!-- Logo -->
+                <div class="flex-center">
+                    <img src="images/logo/logo.svg" alt="logo" width="50px" height="50px">
+                    <h1><span class="bg-darkerBlue borderRadius-std tx-white pd-inline-slight">Gilang NFT</span> Collection </h1>
+                </div>
+                 <!-- Navigasi -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li ><a href="product.html">Product</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="nav-selected"><a href="profile.html">Profile</a></li>
+                        <li><a href="#"><img src="images/cart-shopping.svg" alt="shopping cart icon" class="icon"></a></li>
+                    </ul>
+                </nav>
+
+        </header>
+
+       
+
+        <!-- Content -->
+        <section id="content">
+             <!-- Bagian Sidebar -->
+            <section id="sidebar">
+
+                    <h2>NFT is Gilang</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, unde. Voluptates aliquam voluptatum totam magni dolore nostrum, saepe dignissimos dicta suscipit iusto corrupti tempore veritatis nam repellendus molestiae! Alias suscipit, modi minus laborum veniam molestiae porro repellat velit esse ipsum fugiat ea quidem consectetur iusto, vero cupiditate quae? Labore, atque.</p>
+                     
+                    <!-- Sidebar Item 3 -->
+                      <div class="sidebar-item sd-box-slight">
+
+                        <!-- Header sidebar -->
+                        <div class="sidebar-itemHead dropDown-Head" onclick="toggleDropDown(this)">
+                            <h2 class="tx-text">Currency</h2>
+                            <img src="images/logo/chevron-down.svg" alt="dropdown" width="25px" height="25px" class="dropdown-ic chevron-flipped">
+                        </div>
+
+                        <!-- Text Sidebar -->
+                        <div class="sidebar-itemContent dropDown-item ">
+                            <div class="category">
+
+                                <!-- List sidebar  -->
+                                <p>ETH <input type="checkbox" name="buy-now" id="cateoryChecks"></p>
+                                <p>APE <input type="checkbox" name="auction" id="cateoryChecks"></p>
+                                <p>WETH<input type="checkbox" name="cards" id="cateoryChecks"></p>
+                        
+                            </div>
+                        </div>
+            </section>
+            <!-- About
+                gilang(img)
+                Mengapa Saya menjual gilang? (h2)
+                lorem (p)
+            -->
+            <div id="konten" class="sd-box-slight">
+                <h3 class="tx-openSeaBlue">Pemilik</h3>
+                <img src="images/Fot_Prof.jpg" alt="Vincent" class="poto-profil">
+                    <h1 class="tx-text">Vincent Auriol Liussyaputra</h1>
+                    
+                    <h2 class="tx-text section-title">Pendidikan</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi hic magnam commodi molestias ut corrupti rerum ipsam similique veniam totam exercitationem, neque officia illo sint quaerat perferendis excepturi quas. Autem non quidem eligendi fuga incidunt aliquam qui esse exercitationem minima quaerat nobis possimus veritatis natus cumque dignissimos magnam, distinctio quo voluptate! Suscipit maxime rem ratione repellat iure doloribus, excepturi officiis?</p>
+                    <div class="vertical-cards">
+                        <div class="skill-card sd-box-slight mw80p">
+                            <img src="images/logo/brain.svg" alt="sale">
+                            <h2 class="tx-text">SDN Aren Jaya 14</h2>
+                            <p class="mw60 tx-pColor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dignissimos cum reiciendis, repudiandae corrupti nam harum illum quidem ratione officia sunt commodi facere odit placeat.</p>
+                        </div>
+                        <div class="skill-card sd-box-slight mw80p">
+                            <img src="images/logo/paintbrush.svg" alt="sale">
+                            <h2 class="tx-text">SMPN 32 Kota Bekasi</h2>
+                            <p class="mw60 tx-pColor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dignissimos cum reiciendis, repudiandae corrupti nam harum illum quidem ratione officia sunt commodi facere odit placeat.</p>
+                        </div>
+                        <div class="skill-card sd-box-slight mw80p">
+                            <img src="images/logo/house.svg" alt="sale">
+                            <h2 class="tx-text">SMKN 6 Kota Bekasi</h2>
+                            <p class="mw60 tx-pColor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dignissimos cum reiciendis, repudiandae corrupti nam harum illum quidem ratione officia sunt commodi facere odit placeat.</p>
+                        </div>
+                    </div>
+                    <h2 class="tx-text section-title">Skill</h2>
+                    <div class="skill-cards">
+                        <div class="skill-card sd-box-slight">
+                            <img src="images/logo/chrome.svg" alt="sale">
+                            <h2 class="tx-text">Web Development</h2>
+                            <p class="mw60 tx-pColor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dignissimos cum reiciendis, repudiandae corrupti nam harum illum quidem ratione officia sunt commodi facere odit placeat.</p>
+                        </div>
+                        <div class="skill-card sd-box-slight">
+                            <img src="images/logo/gamepad.svg" alt="sale">
+                            <h2 class="tx-text">Game Development</h2>
+                            <p class="mw60 tx-pColor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dignissimos cum reiciendis, repudiandae corrupti nam harum illum quidem ratione officia sunt commodi facere odit placeat.</p>
+                        </div>
+                        <div class="skill-card sd-box-slight">
+                            <img src="images/logo/shapes.svg" alt="sale">
+                            <h2 class="tx-text">Graphic Design</h2>
+                            <p class="mw60 tx-pColor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dignissimos cum reiciendis, repudiandae corrupti nam harum illum quidem ratione officia sunt commodi facere odit placeat.</p>
+                        </div>
+                    </div>
+                        <p class="paragraph tx-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, quasi. Ad, maxime nihil vel voluptatum deleniti eos porro labore natus expedita beatae fugiat harum, laudantium dolorem ipsum explicabo distinctio cumque tempore debitis et itaque iste laboriosam quos, animi architecto? Dicta?</p>
+                    <hr>
+                    <h2 class="tx-text section-title">Prestasi</h2>
+                    <img src="images/lomba.png" alt="lomba">
+                    <p class="paragraph tx-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repellat beatae voluptatem, id reprehenderit adipisci praesentium obcaecati ratione aperiam nesciunt hic soluta facilis incidunt non impedit molestias recusandae dolore numquam error fuga vitae. Dolores tempore libero eaque alias pariatur veniam voluptate fugit? Nisi consequuntur ipsa facilis explicabo asperiores maiores totam?</p>
+                    <div class="skill-card sd-box-slight">
+                        <img src="images/logo/trophy.svg" alt="sale">
+                        <h2 class="tx-text">Juara 2 Lomba Digital <span class="tx-bold">STMIK Bani Saleh</span> (Neamsi 1)</h2>
+                        <p class="mw60 tx-pColor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dignissimos cum reiciendis, repudiandae corrupti nam harum illum quidem ratione officia sunt commodi facere odit placeat.</p>
+                    </div>
+            </div>
+
+        </section>
+
+        <!-- Bagian Footer -->
+        <footer id="footer">
+
+            <!-- Bagian Sponsor -->
+            <div class="sponsor">
+                <img src="images/logo/logo-un.png" alt="logo unsplash">
+                <img src="images/logo/logo-kem.png" alt="logo Kemnaker">
+                <img src="images/logo/logo-wrp.png" alt="logo wordpress">
+            </div>
+
+
+            <!-- Bagian Footer info -->
+            <div class="footer-info">
+                <hr>
+
+                <div class="grid-infos">
+                    <!-- Info Grid Item -->
+                    <div class="grid-info">
+                        <img src="images/logo/logo-white.svg" alt="logo gilangnft">
+                        <h2>Gilang NFT</h2>
+                        <span>The world’s first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, sell, and discover exclusive digital items.</span>
+                    </div>
+                    
+                    <!-- Info Grid Item -->
+                    <div class="grid-info">
+                        <h2>Marketplace</h2>
+                        <div class="infos">
+                            <p>All NFTs</p>
+                            <p>Solana NFTs</p>
+                            <p>Art</p>
+                            <p>Collectibles</p>
+                            <p>Domain Names</p>
+                            <p>Music</p>
+                            <p>Photography</p>
+                            <p>Sports</p>
+                            <p>Trading Cards</p>
+                            <p>Utility</p>
+                            <p>Virtual Worlds</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Info Grid Item -->
+                    <div class="grid-info">
+                        <h2>My Account</h2>
+                        <div class="infos">
+                            <p>Profile</p>
+                            <p>Watchlist</p>
+                            <p>My Collections</p>
+                            <p>Settings</p>
+                        </div>
+                    </div>
+
+                     <!-- Info Grid Item -->
+                     <div class="grid-info">
+                        <h2>Resources</h2>
+                        <div class="infos">
+                            <p>Help Center</p>
+                            <p>Platform Status</p>
+                            <p>Partners</p>
+                            <p>Taxes</p>
+                            <p>Blog</p>
+                            <p>Docs</p>
+                            <p>Newsletter</p>
+                            <p>Learn</p>
+                        </div>
+                    </div>
+                      <!-- Info Grid Item -->
+                      <div class="grid-info">
+                        <h2>Company</h2>
+                        <div class="infos">
+                            <p>About</p>
+                            <p>Carrers</p>
+                            <p>Ventures</p>
+                            <p>Grants</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr>
+                <p class="tx-center">&copy; Auriol NFT Corp 2019-2022</p>
+            </div>
+
+        </footer>
+      <script src="script/dropdown.js"></script>
+
+
+    </div>
+</body>
+</html>

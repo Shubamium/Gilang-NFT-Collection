@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Header V1.0 -->
+<head>
+
+    <!-- Bagian Metadata -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bagian Display -->
+    <title>Gilang NFT</title>
+    
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/utility.css">
+    <link rel="stylesheet" href="styles/product.css">
+
+</head>
+
+<!-- Body -->
+<body>
+    <!-- Container -->
+    <div id="container">
+
+        <!-- Header -->
+        <header>
+                <!-- Logo -->
+                <div class="flex-center">
+                    <img src="images/logo/logo.svg" alt="logo" width="50px" height="50px">
+                    <h1><span class="bg-darkerBlue borderRadius-std tx-white pd-inline-slight">Gilang NFT</span> Collection </h1>
+                </div>
+                 <!-- Navigasi -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="nav-selected"><a href="product.html">Product</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="#"><img src="images/cart-shopping.svg" alt="shopping cart icon" class="icon"></a></li>
+                    </ul>
+                </nav>
+
+        </header>
+
+        <!-- Content -->
+        <section id="content">
+              
+               <!-- Bagian Sidebar -->
+               <section id="sidebar">
+
+                    <!-- Sidebar Item 1 -->
+                    <div class="sidebar-item sd-box-slight">
+                        <!-- Header sidebar -->
+                        <div class="sidebar-itemHead dropDown-Head" onclick="toggleDropDown(this)">
+                            <h2>Status</h2>
+                            <img src="images/logo/chevron-down.svg" alt="dropdown" width="25px" height="25px" class="dropdown-ic chevron-std">
+                        </div>
+                        <!-- Text Sidebar -->
+                        <div class="sidebar-itemContent dropDown-item hidden">
+                            <div class="category">
+
+                                <!-- List sidebar  -->
+                                <p>Buy Now <input type="checkbox" name="buy-now" id="cateoryChecks"></p>
+                                <p>On Auction <input type="checkbox" name="auction" id="cateoryChecks"></p>
+                                <p>Buy with card<input type="checkbox" name="cards" id="cateoryChecks"></p>
+                        
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Sidebar Item 2 -->
+                    <div class="sidebar-item sd-box-slight">
+                        <!-- Header sidebar -->
+                        <div class="sidebar-itemHead dropDown-Head" onclick="toggleDropDown(this)">
+                            <h2>Quantity</h2>
+                            <img src="images/logo/chevron-down.svg" alt="dropdown" width="25px" height="25px" class="dropdown-ic chevron-std">
+                        </div>
+                        <!-- Text Sidebar -->
+                        <div class="sidebar-itemContent dropDown-item hidden">
+                            <div class="category">
+
+                                <!-- List sidebar  -->
+                                <p>All items <input type="radio" name="quantity" value="all" id="cateoryRadio"></p>
+                                <p>Single items <input type="radio" name="quantity" value="single" id="categoryRadio"></p>
+                                <p>Bundles <input type="radio" name="quantity" value="bundle" id="categoryRadio"></p>
+                        
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Sidebar Item 3 -->
+                    <div class="sidebar-item sd-box-slight">
+                        <!-- Header sidebar -->
+                        <div class="sidebar-itemHead dropDown-Head" onclick="toggleDropDown(this)">
+                            <h2>Currency</h2>
+                            <img src="images/logo/chevron-down.svg" alt="dropdown" width="25px" height="25px" class="dropdown-ic chevron-flipped">
+                        </div>
+                        <!-- Text Sidebar -->
+                        <div class="sidebar-itemContent dropDown-item ">
+                            <div class="category">
+
+                                <!-- List sidebar  -->
+                                <p>ETH <input type="checkbox" name="buy-now" id="cateoryChecks"></p>
+                                <p>APE <input type="checkbox" name="auction" id="cateoryChecks"></p>
+                                <p>WETH<input type="checkbox" name="cards" id="cateoryChecks"></p>
+                        
+                            </div>
+                        </div>
+
+                    </div>
+
+               </section>
+
+                <!-- bagian catalog-->
+                <div id="catalog" class="sd-box-slight">
+                    <div class="controls">
+                        <div class="refresh">
+                            <img src="images/logo/arrows-rotate.svg" alt="refresh" width="35px" height="35px">
+                            <p class="tx-text">Updated 12m ago</p>
+                        </div>
+                        <h3 class="tx-text">47,392,831 items</h3>
+                    </div>
+                    <div class="catalog-produk">
+
+
+                             <!-- Produk -->
+                             <div id="product" onclick="window.location='produk2.html';">
+                                <img src="images/gilang-stripe.png" alt="gilang">
+                                <div class="text-part">
+                                    <h3>Gilang Sepia #3904</h3>
+                                    <p>Gilang Stripe Edition</p>
+                                    <div class="price">
+                                        <img src="images/logo/eth.png" alt="eth" width="25px" height="25px">
+                                        <h2>1.091</h2>
+                                    </div>
+                                </div>
+    
+                                <div class="hidden-btn">
+                                    <h2>Buy Now</h2>
+                                </div>
+                            </div>
+
+                            
+                         <!-- Produk -->
+                         <div id="product" onclick="window.location='produk1.html';">
+                            <img src="images/gilang-std.jpg" alt="gilang">
+                            <div class="text-part">
+                                <h3>Gilang Red #0024</h3>
+                                <p>Gilang Standard Edition</p>
+                                <div class="price">
+                                    <img src="images/logo/eth.png" alt="eth" width="25px" height="25px">
+                                    <h2>0.011</h2>
+                                </div>
+                            </div>
+
+                            <div class="hidden-btn">
+                                <h2>Buy Now</h2>
+                            </div>
+                        </div>
+
+                            <!-- Produk -->
+                            <div id="product" onclick="window.location='produk3.html';">
+                                <img src="images/gilang-poly.png" alt="gilang">
+                                <div class="text-part">
+                                    <h3>Geometry Gilang #9611</h3>
+                                    <p>Gilang Poly Edition</p>
+                                    <div class="price">
+                                        <img src="images/logo/eth.png" alt="eth" width="25px" height="25px">
+                                        <h2>0.426</h2>
+                                    </div>
+                                </div>
+    
+                                <div class="hidden-btn">
+                                    <h2>Buy Now</h2>
+                                </div>
+                            </div>
+
+                           <!-- Produk -->
+                           <div id="product" onclick="window.location='produk4.html';">
+                            <img src="images/gilang-std.jpg" alt="gilang" class="gilang3">
+                            <div class="text-part">
+                                <h3>Gilang Hulk #7719</h3>
+                                <p>Gilang Standard Edition</p>
+                                <div class="price">
+                                    <img src="images/logo/eth.png" alt="eth" width="25px" height="25px">
+                                    <h2>0.016</h2>
+                                </div>
+                            </div>
+
+                            <div class="hidden-btn">
+                                <h2>Buy Now</h2>
+                            </div>
+                           </div>
+
+
+                                        <!-- Produk -->
+                           <div id="product" onclick="window.location='produk5.html';">
+                                <img src="images/gilang-stripe.png" alt="gilang" class="gilang4">
+                                <div class="text-part">
+                                    <h3>Gilang Synthion #7719</h3>
+                                    <p>Gilang Strip Edition</p>
+                                    <div class="price">
+                                        <img src="images/logo/eth.png" alt="eth" width="25px" height="25px">
+                                        <h2>7.016</h2>
+                                    </div>
+                                </div>
+
+                                <div class="hidden-btn">
+                                    <h2>Buy Now</h2>
+                                </div>
+                            </div>
+
+
+                            <!-- Produk -->
+                           <div id="product" onclick="window.location='produk6.html';">
+                                <img src="images/gilang-poly.png" alt="gilang" class="gilang5">
+                                <div class="text-part">
+                                    <h3>Gilang Prismarine #7719</h3>
+                                    <p>Gilang Poly Edition</p>
+                                    <div class="price">
+                                        <img src="images/logo/eth.png" alt="eth" width="25px" height="25px">
+                                        <h2>0.201</h2>
+                                    </div>
+                                </div>
+
+                                <div class="hidden-btn">
+                                    <h2>Buy Now</h2>
+                                </div>
+                           </div>
+                           <div id="product">
+                            
+                           </div>
+
+                           <div id="product">
+                            
+                        </div>
+
+                        <div id="product">
+                            
+                        </div>
+
+                        <div id="product">
+                            
+                        </div>
+
+                    </div>
+                </div>
+             
+        </section>
+
+        <!-- Bagian Footer -->
+        <footer id="footer">
+
+            <!-- Bagian Sponsor -->
+            <div class="sponsor">
+                <img src="images/logo/logo-un.png" alt="logo unsplash">
+                <img src="images/logo/logo-kem.png" alt="logo Kemnaker">
+                <img src="images/logo/logo-wrp.png" alt="logo wordpress">
+            </div>
+
+
+            <!-- Bagian Footer info -->
+            <div class="footer-info">
+                <hr>
+
+                <div class="grid-infos">
+                    <!-- Info Grid Item -->
+                    <div class="grid-info">
+                        <img src="images/logo/logo-white.svg" alt="logo gilangnft">
+                        <h2>Gilang NFT</h2>
+                        <span>The world’s first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, sell, and discover exclusive digital items.</span>
+                    </div>
+                    
+                    <!-- Info Grid Item -->
+                    <div class="grid-info">
+                        <h2>Marketplace</h2>
+                        <div class="infos">
+                            <p>All NFTs</p>
+                            <p>Solana NFTs</p>
+                            <p>Art</p>
+                            <p>Collectibles</p>
+                            <p>Domain Names</p>
+                            <p>Music</p>
+                            <p>Photography</p>
+                            <p>Sports</p>
+                            <p>Trading Cards</p>
+                            <p>Utility</p>
+                            <p>Virtual Worlds</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Info Grid Item -->
+                    <div class="grid-info">
+                        <h2>My Account</h2>
+                        <div class="infos">
+                            <p>Profile</p>
+                            <p>Watchlist</p>
+                            <p>My Collections</p>
+                            <p>Settings</p>
+                        </div>
+                    </div>
+
+                     <!-- Info Grid Item -->
+                     <div class="grid-info">
+                        <h2>Resources</h2>
+                        <div class="infos">
+                            <p>Help Center</p>
+                            <p>Platform Status</p>
+                            <p>Partners</p>
+                            <p>Taxes</p>
+                            <p>Blog</p>
+                            <p>Docs</p>
+                            <p>Newsletter</p>
+                            <p>Learn</p>
+                        </div>
+                    </div>
+                      <!-- Info Grid Item -->
+                      <div class="grid-info">
+                        <h2>Company</h2>
+                        <div class="infos">
+                            <p>About</p>
+                            <p>Carrers</p>
+                            <p>Ventures</p>
+                            <p>Grants</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr>
+                <p class="tx-center">&copy; Auriol NFT Corp 2019-2022</p>
+            </div>
+
+        </footer>
+
+
+    </div>
+
+    <!-- Script dropdown -->
+    <script src="script/dropdown.js"></script>
+</body>
+</html>

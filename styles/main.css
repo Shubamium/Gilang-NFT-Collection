@@ -1,0 +1,378 @@
+/* Styling untuk bagian yang static - Header, Nav ,Sidebar, Footer-
+    #Link css ini ke semua halaman! :
+    -
+    -
+    -
+    ##############################################################
+*/
+
+
+/* Baisc Reset CSS * (selector Semua element) */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+/* Variable */
+:root{
+    /* Palette Warna */
+    --accentWhite: #d3e9f2;
+    --backgroundWhite: #bfdaf3;
+    --backgroundWhiteAlt: #fbfdff;
+    --mainColor: #96c0d1;
+    --darker-mainColor: rgb(57, 78, 98);
+    --textColor: #354951;
+    --openseaBlue: #2081e2;
+    --paragraphColor:rgb(159, 159, 159);
+    --backgroundBright:#fbfdff;
+    --grey:rgb(236, 234, 234);
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.ttf');
+    font-weight: normal;
+}
+@font-face{
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: 'Noto Sans';
+    src: url('../fonts/Noto_Sans/NotoSans-Medium.ttf');
+}
+@font-face{
+    font-family: 'Noto Sans';
+    src: url('../fonts/Noto_Sans/NotoSans-Light.ttf');
+    font-weight: 300;
+    
+}
+
+
+body{
+    background-color: var(--accentWhite);
+}
+
+/* Style bagian -Container- */
+#container{
+    /* Style disini */
+    font-family: 'Poppins',sans-serif;
+}
+
+/* Style bagian -Content */
+#content{
+    position: relative;
+    min-height: 100vh;    
+}
+/* Style bagian -Header- */
+header{
+    background-color: var(--backgroundBright);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 2em;
+    box-shadow: 0px 1px 5px #0d14166e;
+    position: relative;
+    z-index: 2;
+    border-bottom: 1px solid #33434985;
+}
+
+    header h1{
+        color: var(--darker-mainColor);
+        padding: .4em .5em;
+        white-space: nowrap;
+        font-size: 1.6rem;
+    }
+
+    /* bagian -Navigasi- */
+    nav{
+        width: 80%;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        gap: 5px;
+    }
+
+        nav ul a{
+            /* Positioning */
+            min-width: 150px;
+            /* Text */
+            color: var(--textColor);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            height: 100%;
+        }
+
+        nav ul li a{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+        }
+
+        nav ul li:hover, .nav-selected{
+            background-color: var(--textColor);
+            border-radius: 2vh;
+            transition: all 400ms;
+            border-bottom: 5px solid rgb(18, 26, 34);
+        }
+
+        nav ul li:hover a, .nav-selected a {
+            /* text-decoration: underline; */
+            color: white;
+            opacity: .8;
+        }
+
+
+        nav ul li:hover img{
+            filter: invert(80%);
+        }
+
+        .icon{
+            display: block;
+            height: 30px;
+        }
+
+
+/* Button */
+.btn{
+    padding: 10px;
+    border-radius: .5ch;
+    min-width: 170px;
+    margin: .2em ;
+    border: none;
+    background-color: var(--openseaBlue);
+    
+    /* Text */
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color:var(--accentWhite);
+    border: 3px solid var(--openseaBlue);
+    
+}
+
+    .btn:hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 10px black;
+        transform: scale(1.1);
+        transition: all 200ms;
+    }
+
+
+    /* Button Transparan */
+    .btn-ts{
+        background-color: #35495174;
+        border: 3px solid var(--textColor);
+
+    }
+
+    .btn-ts:hover{
+        background-color: var(--textColor);
+        transition: all 250ms;
+        
+    }
+
+/* Styling Bagian -sidebar- */
+#sidebar{
+    width: 400px;
+    min-height: 840px;
+
+    /* Position  */
+    margin: 1em 0em 1em 2em;
+    
+    position:sticky;
+    float:left;
+    top: 2%;
+    left: 0%;
+     
+    /* Display */
+    border-radius: 1vw;
+    background-color: var(--backgroundBright);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.271);
+    animation: swipe-fadeIn 0.9s;
+
+}
+
+/* Styling bagian dropdown */
+    .chevron-std{
+        transform: rotate(180deg);
+        transition: all 450ms;
+    }
+    .chevron-flipped{
+        transform: rotate(0deg);
+        transition: all 450ms ;
+    }
+
+.dropDown-Head{
+    cursor: pointer;
+}
+
+/* Styling bagian -Footer- */
+#footer{
+    min-height: 50vh;
+    
+    background-color: var(--textColor);
+    color: var(--accentWhite);
+}
+
+    /* Styling footer sponsor */
+    #footer .sponsor{
+        background-color: rgba(21, 151, 177, 0.523);
+        display: flex;
+        justify-content: center;
+        gap: 5em;
+        padding: 0.5em 0;
+    }
+
+    #footer .sponsor img{
+        max-height: 60px;
+        max-width: 200px ;
+        object-fit: contain;
+        filter: grayscale(100%) invert(70%);
+        display: var(--backgroundWhite);
+    }
+
+    #footer .sponsor img:hover{
+        cursor: pointer;
+        filter: brightness(0%) invert(100%);
+    }
+
+    #footer hr{
+        height: 2px;
+        border: none;
+        background-color: rgb(255, 255, 255);
+        opacity: .74;
+        margin: 2em;
+    }
+
+    #footer .footer-info{
+        padding-top: 2em;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+        .footer-info .grid-infos{
+
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+        }
+
+        .footer-info .grid-info{
+            padding: 2em;
+        }
+
+            .footer-info .grid-info h2{
+                font-size: 1.2rem;
+                color: #a1c4d3;
+            }
+
+            .footer-info .grid-info p, .footer-info .grid-info span{
+                margin: 1em 0;
+                font-size: .9em;
+                color: #7a96a2;
+            }
+
+            .footer-info .grid-info p:hover{
+                cursor: pointer;
+                color: #c3dbe6;
+                transform: translateX(2%);
+                transition: all 500ms;
+            }
+
+            .footer-info p:last-child{
+                padding-bottom: 2em;
+            }
+
+/* Styling bagian product */
+#product{
+    height: 550px;
+    width: 320px;
+    min-width: 350px;
+    border-radius: 1vw;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.31);
+    background-color: var(--backgroundBright);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 2em;
+}
+
+    #product >  img{
+        width: 105%;
+        height: 370px;
+        object-fit: cover;
+    }
+    
+    #product .text-part{
+        padding: 1em;
+    }
+
+    #product .text-part .price{
+        margin: 1em 0;
+    }
+
+    #product .text-part .price > *{
+        display: inline-block;
+        font-weight: 500;
+    }
+
+    #product:hover{
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.527);
+
+    }
+    #product:hover > img{
+        transform: scale(1.07);
+        transform-origin: bottom;
+        transition: all 500ms;
+    }
+
+    #product .hidden-btn{
+        background-color: #2081e2;
+        position:absolute;
+        z-index: 2;
+        width: 100%;
+        top: 100%;
+        left: 0%;
+        
+    }
+        #product .hidden-btn h2{
+            color: var(--accentWhite);
+            text-align: center;
+            padding: 6px;
+        }
+
+    #product:hover .hidden-btn{
+        top: 92%;
+        transition: all 400ms;
+    }
+    #product .hidden-btn:hover{
+        background-color: #699cee;
+    }
+
+/* Styling bagian input */
+
+input[type="checkbox"]{
+    padding:20px;
+    width: 20px;
+    color: var(--openseaBlue);
+    accent-color: var(--openseaBlue);
+    cursor: pointer;
+}
+
+input[type="radio"]{
+    padding:20px;
+    width: 20px;
+    color: var(--openseaBlue);
+    accent-color: var(--openseaBlue);
+    cursor: pointer;
+}

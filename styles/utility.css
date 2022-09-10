@@ -1,0 +1,161 @@
+/* Styling tambahan untuk style style yang minim perubahan.
+    #Link css ini ke semua halaman! :)
+    -
+    -
+    -
+    ##############################################################
+*/
+/* Text */
+.tx-white{
+    color: var(--accentWhite);
+}
+
+.tx-openSeaBlue{
+    color: var(--openseaBlue);
+}
+
+.tx-pColor{
+    color: var(--paragraphColor);
+}
+
+.tx-text{
+    color: var(--textColor);
+}
+
+.tx-bold{
+    font-weight: bold;
+}
+
+.tx-center{
+    text-align: center;
+}
+
+.tx-right{
+    text-align: right;
+}
+
+/* Warna background */
+.bg-darkerBlue{
+    background-color: var(--textColor);
+}
+
+.bg-ts{
+    background-color: transparent;
+}
+
+
+.bg-gilang-stripe{
+    background-image: url(../images/gilang-stripe.png);
+}
+
+.bg-gilang-std{
+    background-image: url(../images/gilang-std.jpg);
+}
+
+.bg-gilang-poly{
+    background-image: url(../images/gilang-poly.png);
+}
+
+.bg-gilang-art{
+    background-image: url(../images/gilang-art.png);
+    background-position: top;
+}
+
+
+/* Box Setting */
+.borderRadius-std{
+    border-radius: 1vw;
+}
+
+
+/* Padding and margin */
+.pd-inline-slight{
+    padding-inline: .2em;
+}
+
+.pd-10px{
+    padding: 10px;
+}
+
+.tx-indent-slight{
+    text-indent: .22em;
+}
+
+/* Shadow */
+.sd-box-slight{
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.271);
+}
+
+
+/* Animation */
+@keyframes muter {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.scaleHover:hover{
+    scale: 1.1;
+    transition: scale 500ms;
+}
+/* Size an Limit */
+
+.mw60{
+    max-width: 60ch;
+}
+
+.mw1400px{
+    max-width: 1400px;
+}
+
+.mw80p{
+    max-width: 80%;
+}
+
+/* Display Type */
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.strike{
+    text-decoration: line-through;
+}
+
+/* Filter */
+
+.gilang3{
+    filter: hue-rotate(70deg);
+}
+
+.gilang4{
+    filter: hue-rotate(-80deg);
+}
+
+.gilang5{
+    filter: hue-rotate(220deg);
+}
+
+/* Bagian Animasi */
+
+@keyframes swipe-fadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+}
